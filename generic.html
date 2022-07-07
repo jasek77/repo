@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+-->
+<html>
+	<head>
+		<title>How is this website ran?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Jase Koonce</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About me</a></li>
+							<li class="active"><a href="generic.html">How is this website ran?</a></li>
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/jase-koonce-a60126201" class="icon brands alt fa-linkedin"><span class="label">fa-linkedin</span><a href="https://www.linkedin.com/in/jase-koonce-a60126201"></a></li>
+						
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+						
+							<section class="post">
+								<header class="major">
+									<span class="date">July 1, 2022</span>
+									<h1>How is this website ran?<br />
+									</h1>
+									This website was built using an HTML template provided by Massively. The back end is supported <br />
+									by AWS. All AWS resource were provisioned via Terraform, a leading IAC language (infrastructure <br />
+									as code). This server is running on a t2.micro EC2 instance that is isolated within a VPC (virtual <br />
+									private cloud).This VPC allows outside users such as yourself access to this website via a internet <br />
+									gateway. For security this internet gateway also has Security groups or Access control Groups if you <br />
+									prefer tradional networking terms. These Security groups allow the provisioner to specify ports, <br /> 
+									protocols, and IP ranges for both ingress and egress traffic. Within the default VPC a Subnet is <br />
+									created that will allow me to assign an IP address to the EC2 instance. Doing this is very important <br />
+									as it allows for internal routing. Becuase this subnet is using what is called private IP address's <br /> 
+									which are not supposed to route in anything but an internal network, I also provisioned a NAT gateway.<br />
+								    In doing this all information that is sent out of my VPC will be given a public IP address, allowing <br />
+									for Wide area network routing. While this configuration is very basic at the moment I plan to add more <br />
+									and update this website with more information</p>
+								
+								</header>
+								<div class="image main"><img src="images/pic02.jpeg" alt="" /></div>
+								
+
+					</div>
+
+				<!-- Footer -->
+					
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
